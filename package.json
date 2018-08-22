@@ -1,0 +1,20 @@
+{
+  "name": "search-osm-batch",
+  "version": "1.0.0",
+  "description": "Search position info from openStreetMap with multiple places",
+  "main": "index.js",
+  "author": "yofr4nk@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "start": "",
+    "test": "mocha  ./tests --recursive",
+    "test:watch": "mocha  ./tests --recursive --watch"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bluebird": "^3.5.1",
+    "lodash": "^4.17.10",
+    "mocha": "^5.2.0",
+    "unit.js": "^2.0.0"
+  }
+}
