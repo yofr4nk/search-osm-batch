@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "Search position info from openStreetMap with multiple places",
   "main": "index.js",
-  "author": "Yofrank S. yofr4nk@gmail.com",
   "license": "MIT",
   "scripts": {
     "test": "mocha ./tests --recursive",
     "test:watch": "mocha ./tests --recursive --watch"
+  },
+  "author": {
+    "name": "Yofrank S.",
+    "email": "yofr4nk@gmail.com"
   },
   "keywords": [
     "openstreetmap",
