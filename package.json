@@ -3,12 +3,35 @@
   "version": "1.0.0",
   "description": "Search position info from openStreetMap with multiple places",
   "main": "index.js",
-  "author": "yofr4nk@gmail.com",
+  "author": "Yofrank S. yofr4nk@gmail.com",
   "license": "MIT",
   "scripts": {
-    "start": "",
-    "test": "mocha  ./tests --recursive",
-    "test:watch": "mocha  ./tests --recursive --watch"
+    "test": "mocha ./tests --recursive",
+    "test:watch": "mocha ./tests --recursive --watch"
+  },
+  "keywords": [
+    "openstreetmap",
+    "Nominatim",
+    "javascript",
+    "json",
+    "batching",
+    "searching",
+    "geolocation",
+    "latitude",
+    "longitude",
+    "maps",
+    "osm"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yofr4nk/search-osm-batch"
+  },
+  "bugs": {
+    "url": "https://github.com/yofr4nk/search-osm-batch/issues"
+  },
+  "homepage": "https://github.com/yofr4nk/search-osm-batch#readme",
+  "engines": {
+    "node": ">=7.6.0"
   },
   "dependencies": {
     "axios": "^0.18.0",
