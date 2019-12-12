@@ -26,14 +26,15 @@ describe(('Batching search from Nominatim openStreetMap service'), () => {
 				'Fantasilandia': 1,
 				'Airport': 2
 			};
+			
 			array(places).isNotEmpty();
-			array(places).hasLength(3);
+			array(places).hasLength(5);
 
 			value(places[keyPlaces['Hospital']]).hasValue('33.4864304');
 			value(places[keyPlaces['Hospital']]).hasValue('-82.0945236419165');
 
-			value(places[keyPlaces['Fantasilandia']]).hasValue('-33.4603911');
-			value(places[keyPlaces['Fantasilandia']]).hasValue('-70.6627724235182');
+			value(places[keyPlaces['Fantasilandia']]).hasValue('-33.4602554');
+			value(places[keyPlaces['Fantasilandia']]).hasValue('-70.6627428641899');
 
 			value(places[keyPlaces['Airport']]).hasValue('25.7949789');
 			value(places[keyPlaces['Airport']]).hasValue('-80.2867234109541');
@@ -66,7 +67,7 @@ describe(('Batching search from Nominatim openStreetMap service'), () => {
 				addressdetails: 1
 			});
 			value(places[0]).hasKey('address');
-			value(places[0].address.country).is('United States of America');
+			value(places[0].address.country).is('United States');
 			value(places[0].address.state).is('Georgia');
 		});
 
