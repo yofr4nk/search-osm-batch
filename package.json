@@ -1,6 +1,6 @@
 {
   "name": "search-osm-batch",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Search position info from openStreetMap with multiple places",
   "main": "index.js",
   "license": "MIT",
