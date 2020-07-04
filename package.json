@@ -1,12 +1,16 @@
 {
   "name": "search-osm-batch",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Search position info from openStreetMap with multiple places",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "test:watch": "jest -t --watchAll",
     "test": "jest --coverage --forceExit --detectOpenHandles"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/",
+    "access": "public"
   },
   "author": {
     "name": "Yofrank S.",
