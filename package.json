@@ -4,6 +4,9 @@
   "description": "Search position info from openStreetMap with multiple places",
   "main": "index.js",
   "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "test:watch": "jest -t --watchAll",
     "test": "jest --coverage --forceExit --detectOpenHandles"
