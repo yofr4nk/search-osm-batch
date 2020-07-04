@@ -1,12 +1,12 @@
 {
   "name": "search-osm-batch",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Search position info from openStreetMap with multiple places",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "mocha ./tests --recursive",
-    "test:watch": "mocha ./tests --recursive --watch"
+    "test:watch": "jest -t --watchAll",
+    "test": "jest --coverage --forceExit --detectOpenHandles"
   },
   "author": {
     "name": "Yofrank S.",
@@ -39,8 +39,9 @@
   "dependencies": {
     "axios": "^0.18.0",
     "bluebird": "^3.5.1",
-    "lodash": "^4.17.10",
-    "mocha": "^5.2.0",
-    "unit.js": "^2.0.0"
+    "lodash": "^4.17.10"
+  },
+  "devDependencies": {
+    "jest": "^26.1.0"
   }
 }
