@@ -9,9 +9,8 @@ describe('UTILs function testing', () => {
 		});
 
 		test('should return an error if some argument is not a string', () => {
-			expect(() => {
-				buildPlaceParam(1);
-			}).toThrow();
+			const parsePlace = buildPlaceParam(1);
+			expect(parsePlace).toBe('');
 		});
 	});
 

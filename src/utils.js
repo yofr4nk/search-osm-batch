@@ -2,7 +2,10 @@ const buildPlaceParam = function (place) {
 	try {
 		return place.replace(/ /g, '%20');
 	} catch(err) {
-		throw new Error(err);
+		console.error("error parsing placeParam: ", place);
+		console.error(err);
+
+		return ""
 	}
 }
 
